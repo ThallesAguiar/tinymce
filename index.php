@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="https://cdn.tiny.cloud/1/5iz1qas7kbokguikpszjkf4jp7mnckd2noiox92kugaxigum/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script>
+    // https://www.docow.com/45395/limitar-o-numero-de-caracteres-no-tinymce.html#:~:text=tinyMCE%20n%C3%A3o%20fornece%20nenhuma%20maneira,ou%20sua%20l%C3%B3gica%20para%20isso.
         tinymce.init({
             selector: '#tiny',
             menubar: 'file | tools',
@@ -49,9 +50,9 @@
         </div>
 
         <form method="post">
-            <textarea my-input=”name” id="tiny" name="tiny" placeholder="Escreva a sua redação aqui ..." maxlength="10"></textarea>
+            <textarea my-input=”name” id="tiny" name="tiny" placeholder="Escreva a sua redação aqui ..."></textarea>
             <small id="character_count"><!--Mostra a quantidade de caracteres--></small><br>
-            <a class="btn btn-danger btn-lg" href="http://localhost/redacao/" type="button" role="button">Cancelar</a>
+            <a class="btn btn-danger btn-lg" href="http://localhost/" type="button" role="button">Cancelar</a>
             <a class="btn btn-warning btn-lg" href="#" type="button" role="button">Limpar</a>
             <a class="btn btn-success btn-lg" href="#" type="submit" role="button">Enviar</a>
         </form>
